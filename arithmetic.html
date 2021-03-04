@@ -43,14 +43,14 @@
     function permutations(){
         firstnumber = document.getElementById("first_number").value
         secondnumber = document.getElementById("second_number").value
-        var D = 1;
+        var d = 1;
         let i=firstnumber;
         do{
-            D *=i;
+            d *=i;
             i--
         }while(i>=(firstnumber-secondnumber+1))
         out = document.getElementById("result")
-        out.innerHTML = firstnumber+" permute "+secondnumber+" is "+
+        out.innerHTML = firstnumber+" permute "+secondnumber+" is "+d
         }
     
     function processRadio(){
